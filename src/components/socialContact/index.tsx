@@ -18,19 +18,19 @@ const SocialContact: FunctionComponent<SocialContactProps> = ({
   return (
     <div className={className}>
       <Link href="https://github.com/VuSE150296" target="blank">
-        <GitHubIcon fontSize="large" className="fill-white" />
+        <GitHubIcon fontSize="large" />
       </Link>
       <Link href="https://www.facebook.com/danglehoaivu/" target="blank">
-        <FacebookIcon fontSize="large" className="fill-white" />
+        <FacebookIcon fontSize="large" />
       </Link>
       <Link
         href="https://www.linkedin.com/in/dang-le-hoai-vu-0a9329214/"
         target="blank"
       >
-        <LinkedInIcon fontSize="large" className="fill-white" />
+        <LinkedInIcon fontSize="large" />
       </Link>
       <Link href={"mailto:danglehoaivu@gmail.com"} target="blank">
-        <MailIcon fontSize="large" className="fill-white" />
+        <MailIcon fontSize="large" />
       </Link>
     </div>
   );
