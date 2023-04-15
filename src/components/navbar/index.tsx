@@ -40,7 +40,7 @@ const Navbar: FunctionComponent<Props> = (props: Props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ py: 2 }}>
         Dang Le Hoai Vu
       </Typography>
       <Divider />
