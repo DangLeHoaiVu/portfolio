@@ -115,13 +115,8 @@ export default function Home() {
               type="button"
               onClick={handleSlideLeft}
             />
-            <Tooltip title="Press SHIFT to scroll!">
-              <div
-                id="slider"
-                className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4 my-5 w-full overflow-x-scroll scroll scroll-smooth scrollbar-hide"
-              >
-                <SkillCard />
-              </div>
+            <Tooltip title="Press SHIFT and scroll!">
+              <SkillCard />
             </Tooltip>
             <ChevronRightIcon
               fontSize="large"
