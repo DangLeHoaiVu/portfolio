@@ -12,7 +12,7 @@ const Layout: FunctionComponent<LayoutProps> = ({
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">{children}</main>
+      <main className="min-h-screen bg-black text-white">{children}</main>
       <Footer />
     </>
   );
