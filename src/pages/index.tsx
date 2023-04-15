@@ -2,7 +2,6 @@
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import SocialContact from "../components/socialContact/index";
-import Footer from "@/components/footer";
 import ButtonLink from "@/components/button/buttonLink";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import SkillCard from "../components/skillCard/index";
@@ -127,7 +126,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
