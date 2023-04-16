@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import SocialContact from "@/components/socialContact";
 import { FunctionComponent } from "react";
 
