@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
@@ -42,14 +43,14 @@ export default function Home() {
             </div>
             <p className="my-5">Fontend / Backend</p>
           </div>
-
-          <div className="">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui
-              quod nihil sunt architecto iusto cupiditate libero non at, porro
-              officiis eos amet error magnam id maiores dolor maxime.
-              Praesentium.
-            </p>
+          <div className="flex justify-center">
+            <div className="max-w-xs max-h-xs">
+              <img
+                src="/image/avatar.jpg"
+                alt="Avatar"
+                className="object-scale-down rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -60,7 +61,10 @@ export default function Home() {
         style={{ padding: "80px 20px 20px 20px" }}
       >
         <div className="container">
-          <p className="text-3xl font-semibold my-5">/ ABOUT ME</p>
+          <div className="flex gap-4 my-5">
+            <p className="text-cyan-600 text-3xl font-semibold">/</p>
+            <p className="text-3xl font-semibold">ABOUT ME</p>
+          </div>
           <div className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4 my-5">
             <div>
               <p className="text-5xl font-medium py-5">
@@ -106,7 +110,10 @@ export default function Home() {
         style={{ padding: "80px 20px 20px 20px" }}
       >
         <div className="container">
-          <p className="text-3xl font-semibold my-5">/ MY SKILLS</p>
+          <div className="flex gap-4 my-5">
+            <p className="text-cyan-600 text-3xl font-semibold">/</p>
+            <p className="text-3xl font-semibold">MY SKILLS</p>
+          </div>
           <div className="flex items-center">
             <ChevronLeftIcon
               fontSize="large"
