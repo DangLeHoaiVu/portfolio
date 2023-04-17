@@ -65,7 +65,7 @@ export default function Home() {
             <p className="text-cyan-600 text-3xl font-semibold">/</p>
             <p className="text-3xl font-semibold">ABOUT ME</p>
           </div>
-          <div className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4 my-5">
+          <div className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4 my-5 items-center">
             <div>
               <p className="text-5xl font-medium py-5">
                 I’ve been developing websites since 2020
@@ -77,25 +77,25 @@ export default function Home() {
                 dicta, ipsa quis obcaecati eius incidunt.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4 py-5">
+            <div className="grid grid-cols-2 gap-4 py-5 justify-items-center">
               <div className="flex">
-                <p className="text-5xl font-semibold">04</p>
-                <p className="font-semibold ml-4">
+                <p className="text-8xl text-slate-500 font-bold">04</p>
+                <p className="text-4xl text-slate-600 font-semibold ml-4">
                   Years of <br /> experience
                 </p>
               </div>
               <div className="flex">
-                <p className="text-5xl font-semibold">04</p>
-                <p className="font-semibold ml-4">
+                <p className="text-8xl text-slate-500 font-bold">04</p>
+                <p className="text-4xl text-slate-600 font-semibold ml-4">
                   Successful <br /> projects
                 </p>
               </div>
-              <p className="col-span-2">
+              {/* <p className="col-span-2">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Excepturi optio tenetur voluptates dicta. Laborum expedita
                 fugiat, atque repudiandae aliquam commodi voluptatem sunt
                 reprehenderit ex, deleniti aliquid ratione vitae quae enim.
-              </p>
+              </p> */}
             </div>
           </div>
           <ButtonLink className="p-3 font-semibold text-3xl" href="/about-me">
