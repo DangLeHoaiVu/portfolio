@@ -28,12 +28,9 @@ const CardSkill: FunctionComponent<CardSkillProps> = ({
           backgroundColor: "#202020",
           color: "white",
           borderRadius: 10,
-          marginLeft: "10px",
-          marginRight: "10px",
-          padding: 3,
         }}
       >
-        <CardActionArea>
+        <CardContent sx={{ padding: 5 }}>
           <CardMedia
             component="img"
             height="140"
@@ -57,7 +54,7 @@ const CardSkill: FunctionComponent<CardSkillProps> = ({
               {data.description}
             </Typography>
           </CardContent>
-        </CardActionArea>
+        </CardContent>
       </Card>
     </>
   );

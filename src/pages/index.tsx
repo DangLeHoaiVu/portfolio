@@ -9,6 +9,7 @@ import SkillCard from "../components/skillCard/index";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Tooltip from "@mui/material/Tooltip";
+import PortfolioList from "../components/portfolioList/index";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,7 +64,7 @@ export default function Home() {
         <div className="container">
           <div className="flex gap-4 my-5">
             <p className="text-cyan-600 text-3xl font-semibold">/</p>
-            <p className="text-3xl font-semibold">ABOUT ME</p>
+            <p className="text-cyan-700 text-3xl font-semibold">ABOUT ME</p>
           </div>
           <div className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4 my-5 items-center">
             <div>
@@ -71,10 +72,7 @@ export default function Home() {
                 I’ve been developing websites since 2020
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo velit at laudantium iusto inventore dolore. Nesciunt
-                atque asperiores porro omnis, accusamus ratione est cumque
-                dicta, ipsa quis obcaecati eius incidunt.
+                As a front-end developer with 2 years of experience, I have a solid understanding of the Node.js runtime environment, its libraries, and tools. I specialize in working with Next.js, a popular React framework used for server-side rendering, static site generation, and hybrid rendering.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 py-5 justify-items-center">
@@ -90,12 +88,6 @@ export default function Home() {
                   Successful <br /> projects
                 </p>
               </div>
-              {/* <p className="col-span-2">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi optio tenetur voluptates dicta. Laborum expedita
-                fugiat, atque repudiandae aliquam commodi voluptatem sunt
-                reprehenderit ex, deleniti aliquid ratione vitae quae enim.
-              </p> */}
             </div>
           </div>
           <ButtonLink className="p-3 font-semibold text-3xl" href="/about-me">
@@ -112,7 +104,7 @@ export default function Home() {
         <div className="container">
           <div className="flex gap-4 my-5">
             <p className="text-cyan-600 text-3xl font-semibold">/</p>
-            <p className="text-3xl font-semibold">MY SKILLS</p>
+            <p className="text-cyan-700 text-3xl font-semibold">MY SKILLS</p>
           </div>
           <div className="flex items-center">
             <ChevronLeftIcon
@@ -130,6 +122,34 @@ export default function Home() {
               type="button"
               onClick={handleSlideRight}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Project list */}
+      <section
+        className="flex justify-around"
+        style={{ padding: "80px 20px 20px 20px" }}
+      >
+        <div className="container">
+          <div className="flex gap-4 my-5">
+            <p className="text-cyan-600 text-3xl font-semibold">/</p>
+            <p className="text-cyan-700 text-3xl font-semibold">MY PORTFOLIO</p>
+          </div>
+          <div>
+            <PortfolioList>
+              <div>
+                <p className="text-6xl font-semibold my-10">
+                  Take a look at the latest projects I’ve done
+                </p>
+                <ButtonLink
+                  className="p-3 font-semibold text-3xl"
+                  href="/about-me"
+                >
+                  More projects <TrendingFlatIcon />
+                </ButtonLink>
+              </div>
+            </PortfolioList>
           </div>
         </div>
       </section>

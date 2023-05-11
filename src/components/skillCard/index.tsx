@@ -12,9 +12,9 @@ const SkillCard: FunctionComponent<SkillCardProps> = () => {
     <>
       <div
         id="slider"
-        className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4 my-5 w-full overflow-x-scroll scroll scroll-smooth scrollbar-hide"
+        className="flex-auto grid md:grid-cols-2 sm:grid-cols-1 my-5 w-full overflow-x-scroll scroll scroll-smooth scrollbar-hide"
       >
-        <div className="flex flex-row">
+        <div className="flex flex-row gap-5">
           {dataList.map((item: iCardSkill, index) => (
             <CardSkill key={index} data={item} />
           ))}
