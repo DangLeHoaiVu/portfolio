@@ -29,9 +29,16 @@ const CardSkill: FunctionComponent<CardSkillProps> = ({
           color: "white",
           borderRadius: 10,
         }}
+        className="h-full select-none"
       >
         <CardContent sx={{ padding: 5 }}>
           <CardMedia
+            style={{
+              userSelect: 'none',
+              WebkitUserSelect: 'none',
+              MozUserSelect: 'none',
+              WebkitUserDrag: 'none',
+            }}
             component="img"
             height="140"
             image={data.imageSrc}

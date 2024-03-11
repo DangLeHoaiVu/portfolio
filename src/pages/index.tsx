@@ -1,30 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { Inter } from "next/font/google";
-import { useRouter } from "next/router";
 import SocialContact from "../components/socialContact/index";
 import ButtonLink from "@/components/button/buttonLink";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import SkillCard from "../components/skillCard/index";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Tooltip from "@mui/material/Tooltip";
 import PortfolioList from "../components/portfolioList/index";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const router = useRouter();
-
-  const handleSlideLeft = () => {
-    let slider = document.getElementById("slider");
-    if (slider != null) slider.scrollLeft = slider.scrollLeft - 900;
-  };
-
-  const handleSlideRight = () => {
-    let slider = document.getElementById("slider");
-    if (slider != null) slider.scrollLeft = slider.scrollLeft + 900;
-  };
 
   return (
     <>
@@ -106,23 +92,9 @@ export default function Home() {
             <p className="text-cyan-600 text-3xl font-semibold">/</p>
             <p className="text-cyan-700 text-3xl font-semibold">MY SKILLS</p>
           </div>
-          <div className="flex items-center">
-            <ChevronLeftIcon
-              fontSize="large"
-              className="rounded-full hover:bg-white opacity-50"
-              type="button"
-              onClick={handleSlideLeft}
-            />
-            <Tooltip title="Press SHIFT and scroll!">
-              <SkillCard />
-            </Tooltip>
-            <ChevronRightIcon
-              fontSize="large"
-              className="rounded-full hover:bg-white opacity-50"
-              type="button"
-              onClick={handleSlideRight}
-            />
-          </div>
+          <Tooltip title="Press SHIFT and scroll!">
+            <SkillCard />
+          </Tooltip>
         </div>
       </section>
 

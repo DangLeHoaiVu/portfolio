@@ -56,7 +56,7 @@ const About: FunctionComponent<AboutProps> = () => {
               <div>
                 <div className="flex gap-4 my-5">
                   <p className="text-cyan-600 text-3xl font-semibold">/</p>
-                  <p className="text-3xl font-semibold">Sep 2022 - Dec 2022</p>
+                  <p className="text-3xl font-semibold">May 2023 - Dec 2023</p>
                 </div>
                 <div className="flex flex-col gap-3">
                   <p className="text-xl font-medium">
@@ -81,7 +81,7 @@ const About: FunctionComponent<AboutProps> = () => {
             <p>Education</p>
             <div className="flex gap-4 mb-5 mt-10">
               <p className="text-cyan-600 text-3xl font-semibold">/</p>
-              <p className="text-3xl font-semibold">Oct 2019 - Current</p>
+              <p className="text-3xl font-semibold">Oct 2019 - Jan 2024</p>
             </div>
             <div className="flex flex-col gap-3">
               <p className="text-xl font-medium">

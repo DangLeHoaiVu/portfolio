@@ -96,7 +96,7 @@ const Navbar: FunctionComponent<Props> = (props: Props) => {
                 <ListItemButton sx={{ fontSize: "1.5rem" }}>
                   <ButtonLink
                     href={item.link}
-                    active={router.asPath == item.link}
+                    active={router.asPath === item.link}
                   >
                     {item.title}
                   </ButtonLink>
