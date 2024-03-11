@@ -7,6 +7,7 @@ import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import SkillCard from "../components/skillCard/index";
 import Tooltip from "@mui/material/Tooltip";
 import PortfolioList from "../components/portfolioList/index";
+import { NextSeo } from "next-seo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,33 @@ export default function Home() {
 
   return (
     <>
+      {/* SEO */}
+      <NextSeo
+        title="Dang Le Hoai Vu"
+        description="Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,...."
+        openGraph={{
+          url: '/',
+          title: 'Dang Le Hoai Vu Portfolio',
+          description: 'Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,....',
+          images: [
+            {
+              url: '/image/avatar.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+            {
+              url: '/image/avatar.jpg',
+              width: 1200,
+              height: 800,
+              alt: 'Og Image Alt Second',
+              type: 'image/jpeg',
+            }
+          ],
+          siteName: 'DoTranMinhChu',
+        }}
+      />
       <section
         className="flex justify-around"
         style={{ padding: "40px 20px 20px 20px" }}
