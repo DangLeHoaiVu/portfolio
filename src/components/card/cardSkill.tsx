@@ -31,13 +31,12 @@ const CardSkill: FunctionComponent<CardSkillProps> = ({
         }}
         className="h-full select-none"
       >
-        <CardContent sx={{ padding: 5 }}>
+        <CardContent sx={{ padding: 5 }} className="pointer-events-none">
           <CardMedia
             style={{
               userSelect: 'none',
               WebkitUserSelect: 'none',
               MozUserSelect: 'none',
-              cursor: 'none'
             }}
             component="img"
             height="140"
