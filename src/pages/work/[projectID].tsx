@@ -2,6 +2,7 @@ import { projectList } from "@/data/projectList";
 import { useRouter } from "next/router";
 import { FunctionComponent, useEffect, useState } from "react";
 import { iProject } from '../../interfaces/iProject';
+import { NextSeo } from "next-seo";
 
 interface ProjectDetailProps { }
 
@@ -42,7 +43,36 @@ const ProjectDetail: FunctionComponent<ProjectDetailProps> = () => {
     }
   }, [prj]);
 
-  return <>{prjRender}</>;
+  return <>
+    {/* SEO */}
+    <NextSeo
+      title="Project|Dang Le Hoai Vu"
+      description="Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,...."
+      openGraph={{
+        url: '/',
+        title: 'Dang Le Hoai Vu Portfolio',
+        description: 'Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,....',
+        images: [
+          {
+            url: '/image/avatar.jpg',
+            width: 800,
+            height: 600,
+            alt: 'Og Image Alt',
+            type: 'image/jpeg',
+          },
+          {
+            url: '/image/avatar.jpg',
+            width: 1200,
+            height: 800,
+            alt: 'Og Image Alt Second',
+            type: 'image/jpeg',
+          }
+        ],
+        siteName: 'DangLeHoaiVu',
+      }}
+    />
+    {prjRender}
+  </>;
 };
 
 export default ProjectDetail;

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import SocialContact from "@/components/socialContact";
+import { NextSeo } from "next-seo";
 import { FunctionComponent } from "react";
 
 interface AboutProps { }
@@ -7,6 +8,33 @@ interface AboutProps { }
 const About: FunctionComponent<AboutProps> = () => {
   return (
     <>
+      {/* SEO */}
+      <NextSeo
+        title="About|Dang Le Hoai Vu"
+        description="Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,...."
+        openGraph={{
+          url: '/',
+          title: 'Dang Le Hoai Vu Portfolio',
+          description: 'Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,....',
+          images: [
+            {
+              url: '/image/avatar.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+            {
+              url: '/image/avatar.jpg',
+              width: 1200,
+              height: 800,
+              alt: 'Og Image Alt Second',
+              type: 'image/jpeg',
+            }
+          ],
+          siteName: 'DangLeHoaiVu',
+        }}
+      />
       <section
         className="flex justify-around"
         style={{ padding: "40px 20px 20px 20px" }}

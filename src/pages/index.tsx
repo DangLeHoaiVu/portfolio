@@ -39,7 +39,7 @@ export default function Home() {
               type: 'image/jpeg',
             }
           ],
-          siteName: 'DoTranMinhChu',
+          siteName: 'DangLeHoaiVu',
         }}
       />
       <section
