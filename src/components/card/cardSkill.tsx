@@ -37,7 +37,7 @@ const CardSkill: FunctionComponent<CardSkillProps> = ({
               userSelect: 'none',
               WebkitUserSelect: 'none',
               MozUserSelect: 'none',
-              WebkitUserDrag: 'none',
+              cursor: 'none'
             }}
             component="img"
             height="140"
