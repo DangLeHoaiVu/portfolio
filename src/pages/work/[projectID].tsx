@@ -22,14 +22,20 @@ const ProjectDetail: FunctionComponent<ProjectDetailProps> = () => {
   useEffect(() => {
     if (prj) {
       setPrjRender(
-        <section className="flex justify-around" style={{ padding: "40px 20px 20px 20px" }}>
-          <div className="container">
-            <div className="text-3xl font-bold my-28">
+        <section className="flex justify-around" style={{ padding: "20px 0px 20px 0px" }}>
+          <div className="text-3xl font-bold my-10">
+            <div className="mx-10">
               <p>{prj.name}</p>
-              <div className="flex flex-col gap-3">
-                {prj.img.map((image, index) => (
-                  <img key={index} src={image} alt={`Image ${index}`} />
-                ))}
+            </div>
+            <div className="flex flex-col gap-3 my-10">
+              <div className="w-full h-[700px] relative overflow-hidden bg-gray-900">
+                <div className="absolute top-0 left-0 inset-0 flex items-center justify-self-center mx-10 w-max h-fit">
+                  {prj.img.map((image, index) => (
+                    <img key={index} className="w-2/3 h-2/3 -rotate-3 shadow-2xl" src={image} alt={`Img ${index}`} />
+                  ))}
+                </div>
+              </div>
+              <div className="mt-12 mx-10">
                 <div className="flex flex-col gap-3 text-xl font-medium">
                   {prj.description}
                 </div>

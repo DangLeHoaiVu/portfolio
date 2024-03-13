@@ -97,7 +97,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex">
-                <p className="text-8xl text-slate-500 font-bold">04</p>
+                <p className="text-8xl text-slate-500 font-bold">07</p>
                 <p className="text-4xl text-slate-600 font-semibold ml-4">
                   Successful <br /> projects
                 </p>
@@ -144,7 +144,7 @@ export default function Home() {
                 </p>
                 <ButtonLink
                   className="p-3 font-semibold text-3xl"
-                  href="/about-me"
+                  href="/work"
                 >
                   More projects <TrendingFlatIcon />
                 </ButtonLink>

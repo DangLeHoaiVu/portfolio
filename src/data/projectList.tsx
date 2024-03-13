@@ -10,7 +10,7 @@ const projectList: iProject[] = [
   {
     id: 2,
     name: "Findicator",
-    img: ['/image/projects_image/findicator.png'],
+    img: ['/image/projects_image/findicator-1.png', '/image/projects_image/findicator-2.png'],
     description: "The website provides users with a platform to track and monitor the import and export production of various companies. Users can easily access information regarding the quantities and values of goods being imported and exported by different companies. The website offers a user-friendly interface where users can search for specific companies, view their production data, and analyze trends over time. This platform enables users to stay informed about the import and export activities of companies, allowing for better market insights and decision-making.",
   },
 ];
