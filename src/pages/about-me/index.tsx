@@ -10,7 +10,7 @@ const About: FunctionComponent<AboutProps> = () => {
     <>
       {/* SEO */}
       <NextSeo
-        title="About|Dang Le Hoai Vu"
+        title="About | Dang Le Hoai Vu"
         description="Dang Le Hoai Vu Portfolio, introduce about projects, experiences, education,...."
         openGraph={{
           url: '/',
