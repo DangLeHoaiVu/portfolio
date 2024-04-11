@@ -40,15 +40,15 @@ const CardPortlio: FunctionComponent<CardPortlioProps> = ({
       <Link href={`/work/${data.id}`}>
         <Card
           sx={{
-            width: 650,
-            height: 800,
+            maxWidth: 550,
+            height: 500,
             background: "#202020",
             borderRadius: 10,
             margin: "50px 50px 100px 50px",
           }}
           className="hover:-translate-y-6"
         >
-          <CardActionArea sx={{ padding: 3, width: "100%", height: "100%" }}>
+          <CardActionArea sx={{ padding: 3, maxWidth: "100%", height: "100%" }}>
             <CardContent
               sx={{
                 color: "white",
@@ -58,11 +58,19 @@ const CardPortlio: FunctionComponent<CardPortlioProps> = ({
               <Typography
                 gutterBottom
                 component="div"
-                className="font-bold text-5xl"
+                className="font-bold xl:text-5xl lg:text-2xl md:text-md"
               >
                 {data.name}
               </Typography>
-              <Typography variant="body2" className="font-medium text-2xl truncate">
+              <Typography variant="body2" sx={{
+                fontWeight: '500',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical',
+              }}
+                className="font-medium xl:text-2xl lg:text-lg text-sm text-balance">
                 {data.description}
               </Typography>
             </CardContent>

@@ -26,12 +26,14 @@ const PortfolioList: FunctionComponent<PortfolioListProps> = ({
 
   return (
     <>
-      <div className="flex justify-center">
-        <div>
-          {children}
+      <div className="grid xl:grid-cols-2 lg:grid-cols-1 place-items-center">
+        {children}
+        <div className="col-span-1">
           {left.map((item) => item)}
         </div>
-        <div>{right.map((item) => item)}</div>
+        <div className="col-span-1">
+          {right.map((item) => item)}
+        </div>
       </div>
     </>
   );

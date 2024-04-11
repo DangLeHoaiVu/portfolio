@@ -39,13 +39,13 @@ const About: FunctionComponent<AboutProps> = () => {
         className="flex justify-around"
         style={{ padding: "40px 20px 20px 20px" }}
       >
-        <div className="container flex-auto grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+        <div className="container flex-auto">
           <div className="">
-            <p className="text-6xl font-semibold">
+            <p className="xl:text-6xl text-4xl font-semibold">
               I'm Hoai Vu <br />
               Fullstack Web Developer.
             </p>
-            <p className="my-5">
+            <p className="xl:text-lg text-md my-5">
               A full-stack developer is a versatile professional who possesses the skills and knowledge to handle both the front-end and back-end aspects of web development. With expertise in both client-side and server-side technologies, a full-stack developer can seamlessly transition between creating captivating user interfaces and building robust server architectures.
             </p>
           </div>

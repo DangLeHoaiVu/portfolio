@@ -1,10 +1,11 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useId } from "react";
 import PortfolioList from "../../components/portfolioList/index";
 import { NextSeo } from "next-seo";
 
 interface WorkProps { }
 
 const Work: FunctionComponent<WorkProps> = () => {
+  const index = useId()
   return (
     <>
       {/* SEO */}
@@ -35,7 +36,7 @@ const Work: FunctionComponent<WorkProps> = () => {
         }}
       />
       <div className="content-center">
-        <PortfolioList />
+        <PortfolioList key={index} />
       </div>
     </>
   );
