@@ -39,16 +39,16 @@ const Navbar: FunctionComponent<Props> = (props: Props) => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", background: 'black', color: 'white', minHeight: '100%' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         Dang Le Hoai Vu
       </Typography>
-      <Divider />
+      <Divider light={true} sx={{ backgroundColor: "white" }} />
       <List>
         {navItems.map((item, index) => (
           <ListItem key={index} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <Link href={item.link}>{item.title}</Link>
+              <Link href={item.link} className="hover:underline">{item.title}</Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -60,7 +60,7 @@ const Navbar: FunctionComponent<Props> = (props: Props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: 'black' }}>
       <CssBaseline />
       <AppBar
         className="border-b"
